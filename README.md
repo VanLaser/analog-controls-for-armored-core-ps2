@@ -5,4 +5,5 @@ Analog input processing inside these games was retro-fitted using algorithms fro
 There is an additional file (WIP) for AC Nine Breaker that allows firing the Inside part/weapon on Type B (classic, non-analog) controls without having to switch to it. It uses "right analog UP" to fire (analogs are not otherwise used with Type B controls, and no other buttons are free). Basically it levels the field with 'Type A' - analog-based - control scheme, who *DOES* have a dedicated button for firing the Inside part/weapon.
 
 
+![AC-PS2](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/209a57a4-2a13-4af7-9521-9ffb74f308d6)
 

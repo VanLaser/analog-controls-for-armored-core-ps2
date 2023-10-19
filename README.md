@@ -5,14 +5,14 @@ QoL enhancements: analog controls for Armored Core PS2 series (AC2, AC2 Another 
 
 Analog input processing inside these games was retro-fitted using algorithms from AC Nine Breaker.
 
-Left analog sends the following commands: strafe left, strafe right, forward, backward.  
-Right analog sends the following commands: turn left, turn right, look up, look down.
+*Left analog* sends the following commands: strafe left, strafe right, forward, backward.  
+*Right analog* sends the following commands: turn left, turn right, look up, look down.
 
 The analog controls keep working exactly the same ^, even if the user changes the control scheme for the digital buttons, so the buttons can be remapped in-game as you like.
 
 Most importantly, the right analog movement uses the same algorithms as those from Armored Core: Nine Breaker, so it is not just a remapping: the movement is actually smoothed out, different areas of joystick displacement are treaded differently based on the analog value received (not just 0 / 1). In other words, no more junky looking/turning around.
 
-For games that mirrored left joystick to D-PAD buttons, that operation was removed during fights, and replaced with the left analog functionality described above (in other words, left joystick in game does not depend at all of how user mappe the D-PAD buttons).
+For games that mirrored left joystick to D-PAD buttons, that operation was removed during fights, and replaced with the left analog functionality described above (in other words, left joystick in game does not depend at all of how user mapped the D-PAD buttons).
 
 ![AC-PS2](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/209a57a4-2a13-4af7-9521-9ffb74f308d6)
 
@@ -31,6 +31,8 @@ The turn left / turn right analog displacement has two zones:
 - outside deadzone, turn speed is proportional to joystick displacement (AC: Nine Breaker formulas)
 
 Note that you won't be able to turn or look faster than before, just smoother.
+
+The analog movement outside deadzone will also send the digital input mapped by the user in that direction, but the acceleration will be "intercepted" and computed using the above formulas instead of being based only on the digital button information.
 
 Limitations:
 ----

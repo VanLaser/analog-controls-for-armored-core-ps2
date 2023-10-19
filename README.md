@@ -14,7 +14,12 @@ Most importantly, the right analog movement uses the same algorithms as those fr
 
 For games that mirrored left joystick to D-PAD buttons, that operation was removed during fights, and replaced with the left analog functionality described above (in other words, left joystick in game does not depend at all of how user mapped the D-PAD buttons).
 
+
+
 ![AC-PS2](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/209a57a4-2a13-4af7-9521-9ffb74f308d6)
+
+The _.pnach_ files need a recent PS2 emulator, **PCSX2-qt nightly** is highly recommended.  
+The _.ppf_ files can patch the right ISO using **PPF-O-MATIC 3.0**
 
 Technical details
 ----

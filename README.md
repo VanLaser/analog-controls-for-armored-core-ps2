@@ -39,6 +39,15 @@ Note that you won't be able to turn or look faster than before, just smoother.
 
 The analog movement outside deadzone will also send the digital input mapped by the user in that direction, but the acceleration will be "intercepted" and computed using the above formulas instead of being based only on the digital button information.
 
+Fairness:
+---------
+
+- The later PS2 AC games, starting with Nexus, implement two controller schemes: classic, digital (Type B) and analog-based (Type A).  
+- The older games implement looking up/down and turning left/right in the same way as 'Type-B' in the later games.
+- The patches retro-fit into the earlier games the 'Type-A' formulas for looking up/down and turning left/right from the later ones (namely, AC: Nine Breaker).
+
+So: the advantages one has in playing with these patches should be the same as using 'Type A' instead of 'Type B' in the later games. 
+
 Limitations:
 ----
 
@@ -46,7 +55,7 @@ Limitations:
 - The patches are meant for single player, hooked to the 1st controller. This doesn't mean the game should "break" in any multiplayer scenario, just that the 2nd player will only have access to default, non-enhanced controls.
 
 ----
-There is an additional file (WIP) for AC Nine Breaker that allows firing the Inside part/weapon on Type B (classic, non-analog) controls without having to switch to it. It uses "right analog UP" to fire (analogs are not otherwise used with Type B controls, and no other buttons are free). Basically it levels the field with 'Type A' - analog-based - control scheme, who *DOES* have a dedicated button for firing the Inside part/weapon.
+There is an additional file (WIP) for AC Nine Breaker that allows firing the Inside part/weapon on Type B (classic, non-analog) controls without having to switch to it. It uses "right analog UP" to fire (analogs are not otherwise used with Type B controls, and no other buttons are free). Basically it levels the field with Type A - analog-based - control scheme, who *DOES* have a dedicated button for firing the Inside part/weapon.
 
 
 

@@ -1,3 +1,36 @@
+## (New / WIP) Analog controls for Armored Core 1 (USA, Reprint edition - SLUS_013.23)
+
+Analog patch ONLY for Armored Core USA (Reprint) - SLUS_013.23
+
+The original game only works with the controller in 'digital' mode.
+Patched game only works with the controller in 'analog' mode.
+
+Normally this can be configured in your PS1 emulator settings, or
+by pressing the controller 'digital/analog switching mode' button,
+if it has one.
+
+Duckstation emulator knows that the game only works in digital mode,
+therefore by default it won't allow switching to analog mode.
+
+To enable analog mode, edit 'Duckstation/resources/gamesdb.json'
+with a text editor, search for 'SLUS-01323' and modify the "controller"
+entry value from "DigitalController" to "AnalogController".
+
+![duckstation-ac1-gamedb json](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/3111006f-2411-4049-add8-2124cd45ab05)
+
+This is how you it should look like, after editing 'gamesdb.json':
+
+![duckstation-ac1-patched](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/5fc1f568-425d-42ed-81f2-8abcb758e328)
+
+Note that, if Duckstation automatic updates are on, you will lose
+the modifications in 'gamesdb.json', so you have to either repeat
+the steps above, disable the updates, maybe make the file read-only,
+have a backup ready etc.
+
+Use the included *.ppf* file with **PPF-O-MATIC 3.0** and the game's original *.bin* file to create a patched *.bin*.
+
+Feeback welcome.
+
 ## QoL enhancements: analog controls for Armored Core PS2 series (AC2, AC2 Another Age, AC3, AC Silent Line).
 
 *(THIS STILL NEEDS TESTING: if you finish any of these games with the enhancement on, please tell me so I have some feedback)*

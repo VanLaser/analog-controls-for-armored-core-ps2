@@ -10,9 +10,10 @@ by pressing the controller 'digital/analog switching mode' button,
 if it has one.
 
 Duckstation emulator knows that the game only works in digital mode,
-therefore by default it won't allow switching to analog mode.
+therefore by default it won't allow switching to analog mode from the GUI.
+BUT, you can still switch to analog mode by pressing your controller's analog button.
 
-To enable analog mode, edit 'Duckstation/resources/gamesdb.json'
+To default to analog mode when the game starts, edit 'Duckstation/resources/gamesdb.json'
 with a text editor, search for 'SLUS-01323' and modify the "controller"
 entry value from "DigitalController" to "AnalogController".
 
@@ -25,7 +26,7 @@ This is how you it should look like, after editing 'gamesdb.json':
 Note that, if Duckstation automatic updates are on, you will lose
 the modifications in 'gamesdb.json', so you have to either repeat
 the steps above, disable the updates, maybe make the file read-only,
-have a backup ready etc.
+have a backup ready - or use the analog buton on the controller to switch to analog after game starts.
 
 Use the included *.ppf* file with **PPF-O-MATIC 3.0** and the game's original *.bin* file to create a patched *.bin*.
 

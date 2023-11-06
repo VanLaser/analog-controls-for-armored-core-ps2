@@ -1,6 +1,8 @@
-## (New / WIP) Analog controls for Armored Core 1 (USA, Reprint edition - SLUS_013.23)
+## (New / WIP) PS1 Analog controls for Armored Core 1 (USA, Reprint edition - SLUS_013.23) and Armored Core: Project Phantasma (USA - SLUS_006.70) 
 
-Analog patch ONLY for Armored Core USA (Reprint) - SLUS_013.23
+Analog patch ONLY for Armored Core USA (Reprint) - SLUS_013.23 and Armored Core: Project Phantasma (USA - SLUS_006.70).
+
+### AC1 Notes:
 
 The original game only works with the controller in 'digital' mode.
 Patched game only works with the controller in 'analog' mode.
@@ -28,7 +30,9 @@ the modifications in 'gamesdb.json', so you have to either repeat
 the steps above, disable the updates, maybe make the file read-only,
 have a backup ready - or use the analog buton on the controller to switch to analog after game starts.
 
-Use the included *.ppf* file with **PPF-O-MATIC 3.0** and the game's original *.bin* file to create a patched *.bin*.
+## Usage:
+
+Use the relevant *.ppf* file with **PPF-O-MATIC 3.0** and the game's original *.bin* file to create a patched *.bin*.
 
 Feeback welcome.
 

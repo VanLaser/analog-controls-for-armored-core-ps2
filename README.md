@@ -1,6 +1,6 @@
 ## (New / WIP) PS1 Analog controls for Armored Core 1 (USA, Reprint edition - SLUS_013.23) and Armored Core: Project Phantasma (USA - SLUS_006.70) 
 
-Analog patch ONLY for Armored Core USA (Reprint) - SLUS_013.23 and Armored Core: Project Phantasma (USA - SLUS_006.70).
+Analog patches ONLY for _Armored Core USA (Reprint) - SLUS_013.23_ and _Armored Core: Project Phantasma (USA - SLUS_006.70)_.
 
 ### AC1 Notes:
 

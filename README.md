@@ -1,6 +1,17 @@
-## (New / WIP) PS1 Analog controls for Armored Core 1 (USA, Reprint edition - SLUS_013.23) and Armored Core: Project Phantasma (USA - SLUS_006.70) 
+## PS1 Analog controls for Armored Core 1 (USA, Reprint edition - SLUS_013.23), Armored Core: Project Phantasma (USA - SLUS_006.70) and Armored Core: Master of Arena (USA 2CDs - SLUS_010.30 and SLUS_010.81)
 
-Analog patches ONLY for _Armored Core USA (Reprint) - SLUS_013.23_ and _Armored Core: Project Phantasma (USA - SLUS_006.70)_.
+The patches work ONLY with the versions mentioned in the title, and only work if the relevant _.bin_ files are clean, i.e. not already patched with something else (undubs etc.)
+
+Analog input processing inside these games was retro-fitted using algorithms from AC Nine Breaker.
+
+*Left analog* sends the following commands: strafe left, strafe right, forward, backward.  
+*Right analog* sends the following commands: turn left, turn right, look up, look down.
+
+The analog controls keep working exactly the same ^, even if the user changes the control scheme for the digital buttons, so the buttons can be remapped in-game as you like.
+
+Most importantly, the right analog movement uses the same algorithms as those from Armored Core: Nine Breaker, so it is not just a remapping: the movement is actually smoothed out, different areas of joystick displacement are treated differently based on the analog value received (not just 0 / 1). In other words, no more junky looking / turning around.
+
+Note that even in these PS1 games, the control scheme is pretty much the same as "Type B" in later PS2 games (AC Nexus and after). Therefore implementing a kind of "Type A" control scheme (analog-based) should provide a big accesibility boost without adding an unfair advantage (i.e. the 'Fairness' paragraph in the PS2 section still applies). On the contrary, any old school AC player would tell you that "Type B" still has the advantage.
 
 ### AC1 Notes:
 
@@ -8,14 +19,15 @@ The original game only works with the controller in 'digital' mode.
 Patched game only works with the controller in 'analog' mode.
 
 Normally this can be configured in your PS1 emulator settings, or
-by pressing the controller 'digital/analog switching mode' button,
+**by pressing the controller 'digital/analog switching mode' button**,
 if it has one.
 
 Duckstation emulator knows that the game only works in digital mode,
 therefore by default it won't allow switching to analog mode from the GUI.
-BUT, you can still switch to analog mode by pressing your controller's analog button.
+BUT, you can still switch to analog mode by pressing your controller's analog button
+(and this is the simple, recommended approach).
 
-To default to analog mode when the game starts, edit 'Duckstation/resources/gamesdb.json'
+Optional: to default to analog mode when the game starts, edit 'Duckstation/resources/gamesdb.json'
 with a text editor, search for 'SLUS-01323' and modify the "controller"
 entry value from "DigitalController" to "AnalogController".
 
@@ -30,7 +42,19 @@ the modifications in 'gamesdb.json', so you have to either repeat
 the steps above, disable the updates, maybe make the file read-only,
 have a backup ready - or use the analog buton on the controller to switch to analog after game starts.
 
-## Usage:
+### AC: Project Phantasma notes
+
+- Missions, garrage AC test and arena work, but 'Vs. (Splitscreen)' and 'ILINK' modes are not patched
+- Since it's based on recording (digital) inputs only, the replaying system is broken
+  
+### AC: Master of Arena notes
+
+- Missions, garrage AC test, arena and ex-arena work, but 'Vs. (Splitscreen)' and 'ILINK' modes are not patched
+- Since it's based on recording (digital) inputs only, the replaying system is broken
+- The 2 _.ppf_ patches for each CD are actually identical (they patch the same offsets at the same distances in the _.bin_ file), but I included both to avoid any confusion. Just make sure to patch both CDs.
+- For some reason, the _PCSX-Redux_ emulator hangs when loading an Arena or Ex-Arena fight, therefore I recommend using _Duckstation_ for this game.  
+
+### Usage:
 
 Use the relevant *.ppf* file with **PPF-O-MATIC 3.0** and the game's original *.bin* file to create a patched *.bin*.
 
@@ -79,7 +103,7 @@ The analog movement outside deadzone will also send the digital input mapped by 
 - The older games implement looking up/down and turning left/right in the same way as 'Type-B' in the later games.
 - The patches retro-fit into the earlier games the 'Type-A' formulas for looking up/down and turning left/right from the later ones (namely, AC: Nine Breaker).
 
-So: the advantages one has in playing with these patches should be the same as using 'Type A' instead of 'Type B' in the later games. 
+So: the advantages one has in playing with these patches should be the same as using 'Type A' instead of 'Type B' in the later games.
 
 ### Limitations:
 

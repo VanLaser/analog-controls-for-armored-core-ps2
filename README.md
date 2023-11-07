@@ -1,6 +1,10 @@
-## PS1 Analog controls for Armored Core 1 (USA, Reprint edition - SLUS_013.23), Armored Core: Project Phantasma (USA - SLUS_006.70) and Armored Core: Master of Arena (USA 2CDs - SLUS_010.30 and SLUS_010.81)
+## QoL enhancements: analog controls for Armored Core PS1 series: AC1, AC: Project Phantasma and AC: Master of Arena
 
-The patches work ONLY with the versions mentioned in the title, and only work if the relevant _.bin_ files are clean, i.e. not already patched with something else (undubs etc.)
+Supported versions: AC1 (USA, Reprint edition - SLUS_013.23), AC: Project Phantasma (USA - SLUS_006.70) and AC: Master of Arena (USA 2CDs - SLUS_010.30 and SLUS_010.81).
+The patches work ONLY with these versions, and only work if the relevant _.bin_ files are clean, i.e. not already patched with something else (undubs etc.)
+
+![AC-PS1](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/3ec27093-ebd7-4541-801f-669bbf0fb639)
+
 
 Analog input processing inside these games was retro-fitted using algorithms from AC Nine Breaker.
 
@@ -60,9 +64,7 @@ Use the relevant *.ppf* file with **PPF-O-MATIC 3.0** and the game's original *.
 
 Feeback welcome.
 
-## QoL enhancements: analog controls for Armored Core PS2 series (AC2, AC2 Another Age, AC3, AC Silent Line).
-
-*(THIS STILL NEEDS TESTING: if you finish any of these games with the enhancement on, please tell me so I have some feedback)*
+## QoL enhancements: analog controls for Armored Core PS2 series (AC2, AC2: Another Age, AC3, AC: Silent Line).
 
 Analog input processing inside these games was retro-fitted using algorithms from AC Nine Breaker.
 

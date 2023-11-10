@@ -2,7 +2,7 @@
 
 Supported versions: 
 
-- AC1: USA (Reprint edition - SLUS_013.23), Japan (SLPS_009.00), Eu (SCES_008.42)
+- AC1: USA (SCUS_941.82 and SLUS_013.23 - Reprint edition), Japan (SLPS_009.00), Eu (SCES_008.42)
 - AC: Project Phantasma: USA (SLUS_006.70)
 - AC: Master of Arena: USA 2CDs (SLUS_010.30 and SLUS_010.81)
 

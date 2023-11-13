@@ -2,9 +2,11 @@
 
 Supported versions: 
 
-- AC1: USA (SCUS_941.82 and SLUS_013.23 - Reprint edition), Japan (SLPS_009.00), Eu (SCES_008.42)
-- AC: Project Phantasma: USA (SLUS_006.70)
-- AC: Master of Arena: USA 2CDs (SLUS_010.30 and SLUS_010.81)
+- AC1: USA (SCUS_941.82), USA (SLUS_013.23 - Reprint edition), Japan (SLPS_009.00), Eu (SCES_008.42)
+- AC: Project Phantasma: USA (SLUS_006.70), Japan (SLPS_011.30), Japan (SLPS_911.10 - Playstation the Best) 
+- AC: Master of Arena: USA 2CDs (SLUS_010.30 / SLUS_010.81), Japan (SLPS_018.55 / SLPS_018.56), Japan (SLPS_914.44 / SLPS_914.45 - PSone Books)
+
+**_Each patch includes an "Inverted Look Up/Down" version in a separate folder._**
 
 The patches work ONLY with these versions, and only work if the relevant _.bin_ files are clean, i.e. not already patched with something else (undubs etc.)
 
@@ -55,13 +57,13 @@ have a backup ready - or use the analog buton on the controller to switch to ana
 
 - Missions, garrage AC test and arena work, but 'Vs. (Splitscreen)' and 'ILINK' modes are not patched
 - Since it's based on recording (digital) inputs only, the replaying system is broken
+- The unpatched _Japan (SLPS_011.30)_ version only works with controller in 'digital' mode, see the **AC1 Notes** above
   
 ### AC: Master of Arena notes
 
 - Missions, garrage AC test, arena and ex-arena work, but 'Vs. (Splitscreen)' and 'ILINK' modes are not patched
 - Since it's based on recording (digital) inputs only, the replaying system is broken
-- The 2 _.ppf_ patches for each CD are actually identical (they patch the same offsets at the same distances in the _.bin_ file), but I included both to avoid any confusion. Just make sure to patch both CDs.
-- For some reason, the _PCSX-Redux_ emulator hangs when loading an Arena or Ex-Arena fight, therefore I recommend using _Duckstation_ for this game.  
+- For some reason, the _PCSX-Redux_ emulator hangs when loading an Arena or Ex-Arena fight (at least for the USA edition), therefore I recommend using _Duckstation_ for this game.  
 
 ### Usage:
 

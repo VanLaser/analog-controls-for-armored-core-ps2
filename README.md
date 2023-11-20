@@ -69,7 +69,7 @@ have a backup ready - or use the analog buton on the controller to switch to ana
 
 Use the relevant *.ppf* file with **PPF-O-MATIC 3.0** and the game's original *.bin* file to create a patched *.bin*.
 
-Feeback welcome.
+Feedback welcome.
 
 ## QoL enhancements: analog controls for Armored Core PS2 series (AC2, AC2: Another Age, AC3, AC: Silent Line - USA edition).
 

@@ -1,3 +1,26 @@
+## QoL enhancements (WIP): analog controls for Armored Core 3 Portable - USA (PPPSSPP emulator)
+
+(For more details about how these patches work, see PS1 and PS2 sections)
+
+- WIP
+- '_.ini_' file, 'cwcheat' format (only tested on PPSSPP)
+- replays are (and will be) broken
+
+In order for this to work, inside PPSSPP's emulator settings, the controller configuration needs to have mappings added for the in-game right analog
+(even if the real PSP didn't have a right analog pad) matching the axis of your controller (see picture below). In addition, cheats have to be enabled in
+the emulator settings, and - with a recent PPSSPP at least - the '**_.ini_**' file that contains the cwcheat information has to be placed into the 
+'C:\Users\<your user>\Documents\PPSSPP\PSP\Cheats' folder. To confirm, right click the game's icon, click the 'Cheats' option and you should see the
+patch name on the right, with an enabled checkbox:
+
+![ppsspp-enable-cheat](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/595ffc0b-384e-42bc-8b33-531c73616dea)
+
+The patch _might_ work with the Adrenaline, if that emulator is also able to map a right analog pad and send the data inside the game, as PPSSPP does. 
+
+Even if it's a 'cwcheat' (that continuously writes in memory), the patched addresses actually contain all the needed relocation fixes for it to work by directly patching the main executable file. 
+In other words, if one knows how to extract/convert the data from the cwcheat and map it to file offsets, then actually patches a decrypted EBOOT.BIN file and inserts it back into the original ISO (e.g. by using UMDGen),
+it should work in PPSSPP (and maybe Adrenaline) without the need to enable cheats.
+
+
 ## QoL enhancements: analog controls for Armored Core PS1 series: AC1, AC: Project Phantasma and AC: Master of Arena
 
 Supported versions: 

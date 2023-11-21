@@ -6,7 +6,7 @@
 - '_.ini_' file, 'cwcheat' format (only tested on PPSSPP)
 - replays are (and will be) broken
 - should work on at least PPSSPP 1.13.2 or newer
-- for now, it will crush unless: _PPSSPP Settings -> System -> Fast memory (unstable): **DISABLE THIS**_
+- for now, it will crash unless: _PPSSPP Settings -> System -> Fast memory (unstable): **DISABLE THIS**_
 
 In order for this to work, inside PPSSPP's emulator settings, the controller configuration needs to have mappings added for the in-game right analog
 (even if the real PSP didn't have a right analog pad) matching the axis of your controller (see picture below). In addition, cheats have to be enabled in

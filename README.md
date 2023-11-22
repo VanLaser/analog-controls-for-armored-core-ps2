@@ -11,7 +11,7 @@
 In order for this to work, you need the following settings inside the PPSSPP emulator: 
 
 - the controller configuration needs to have mappings added for the in-game right analog (even if the real PSP didn't have a right analog pad), matching the axis of your controller (see picture below).
-- cheats have to be enabled inthe emulator settings
+- cheats have to be enabled in the emulator settings
 - with a recent PPSSPP at least - the '**_.ini_**' file that contains the cwcheat information has to be placed into the 
 _'C:\Users\\<your user\>\Documents\PPSSPP\PSP\Cheats'_ folder (for older PPSSPP versions, this path is _'\<PPSSPP-install-folder\>\memstick\PSP\Cheats'_ instead).
 

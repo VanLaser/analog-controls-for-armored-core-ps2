@@ -128,7 +128,7 @@ The look up / look down analog displacement has three zones:
 The turn left / turn right analog displacement has two zones:
 
 - inside deadzone, turn speed converges to zero
-- outside deadzone, turn speed is proportional to joystick displacement (AC: Nine Breaker formulas)
+- outside deadzone, turn ~~speed~~ acceleration is proportional to joystick displacement (AC: Nine Breaker formulas)
 
 Note that you won't be able to turn or look faster than before, just smoother.
 

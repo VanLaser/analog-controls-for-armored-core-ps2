@@ -114,8 +114,27 @@ For games that mirrored left joystick to D-PAD buttons, that operation was remov
 
 ![AC-PS2](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/209a57a4-2a13-4af7-9521-9ffb74f308d6)
 
+### Install instructions (emulator)
+
 The _.pnach_ files need a recent PS2 emulator, **PCSX2-qt nightly** is highly recommended.  
-The _.ppf_ files can patch the right ISO using **PPF-O-MATIC 3.0**
+
+- Copy the _.pnach_ files into the _'\<PCSX2 install dir\>/cheats/'_ folder. If there is no 'cheats' folder, use the 'patches' folder instead (you have an older version of PCSX2)
+- Open PCSX2, don't start the game yet
+- Select the Armored Core game you want to play from in the game list, right-click, click 'Properties' - this will open a 'Game Properties' window
+- Select 'Cheats' entry on the left, make sure option 'Enable Cheats' is checked, then enable 'True Analogs' below
+- You will need to restart the game every time you change the option (the patch modifies the game only once, when the game starts)
+
+![pcsx2-cheats](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/a9258ffc-d265-4fa2-8308-e456de8e191e)
+
+#### Notes
+
+- if your PCSX2 is a bit older, there will be no 'Cheats' entry. In that case, use the 'Patches' entry instead
+- if you see no 'True Analogs' entry, your PCSX2 may be too old to support the new _.pnach_ file format
+- if you see the 'True Analogs' entry, but it's greyed out (can't enable it), your Armored Core game CRC is "wrong", which means you're playing a patched Armored Core, or a different version of the game
+
+----
+
+- To modifiy a game ISO directly, use the _.ppf_ files instead. The _.ppf_ files can patch the right ISO using **PPF-O-MATIC 3.0**
 
 ### Technical details
 

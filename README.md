@@ -97,6 +97,8 @@ have a backup ready - or use the analog buton on the controller to switch to ana
 
 Use the relevant *.ppf* file with **PPF-O-MATIC 3.0** and the game's original *.bin* file to create a patched *.bin*.
 
+OR, when using the Duckstation emulator: if you go at 'Settings->Console' in the menu, you can enable an option called "Apply Image Patches". Then, if you have the .bin/.cue pair files in their own folder, AND you place there the proper .ppf file and rename it so that it has the exact same name as the bin/cue pair (but still keep the extension .ppf), Duckstation will "see" the patch and use it on the game automatically, while still leaving the .bin file intact.
+
 Feedback welcome.
 
 ## QoL enhancements: analog controls for Armored Core PS2 series (AC2, AC2: Another Age, AC3, AC: Silent Line - USA edition).

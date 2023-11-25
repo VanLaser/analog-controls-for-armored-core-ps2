@@ -85,7 +85,7 @@ have a backup ready - or use the analog buton on the controller to switch to ana
 
 - Missions, garrage AC test and arena work, but 'Vs. (Splitscreen)' and 'ILINK' modes are not patched
 - Since it's based on recording (digital) inputs only, the replaying system is broken
-- The unpatched _Japan (SLPS_011.30)_ version only works with controller in 'digital' mode, see the **AC1 Notes** above
+- The unpatched _Japan (SLPS_011.30)_ version also starts with controller set in 'digital' mode, similar to the first Armored Core game, see the **AC1 Notes** above
   
 ### AC: Master of Arena notes
 

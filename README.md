@@ -19,6 +19,15 @@ To confirm, right click the game's icon, click the 'Cheats' option and you shoul
 
 ![ppsspp-enable-cheat](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/595ffc0b-384e-42bc-8b33-531c73616dea)
 
+#### Purging
+
+The mod also adds an extra 'Purge' modifier, by watching the PSP MUSIC_NOTE button. Pressing this button sends the "_strafe left/strafe right/look up/look down_" combo (no matter how they are mapped in-game), 
+which means it only needs an extra button pressed (_weapon change_, _toggle extension_ or _left weapon_ - depending on what you want) for the actual purge. This should work **_even if the in-game keymap is modified_**, 
+but needs to have an extra key or controller button mapped in the PPSSPP emulator, so that the PSP MUSIC_NOTE button can be actually sent to the game. For example (mapped to R2):
+
+![purge-mod](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/d50d167e-fa8d-455a-ae84-8fbfda6f63c9)
+
+
 The patch _might_ work with the Adrenaline, if that emulator is also able to map a right analog pad and send the data inside the game, as PPSSPP does. Otherwise, somebody has to write a plugin for that.
 
 Even if it's a 'cwcheat' (that continuously writes in memory), the patched addresses actually contain all the needed relocation fixes for it to work by directly patching the main executable file. 

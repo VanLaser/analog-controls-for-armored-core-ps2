@@ -39,7 +39,7 @@ it should work in PPSSPP (and maybe Adrenaline) without the need to enable cheat
 
 Supported versions: 
 
-- AC1: USA (SCUS_941.82), USA (SLUS_013.23 - Reprint edition), Japan (SLPS_009.00), Eu (SCES_008.42)
+- AC1: USA (SCUS_941.82), USA (SLUS_013.23 - Reprint edition), Japan (SLPS_009.00), Europe (SCES_008.42)
 - AC: Project Phantasma: USA (SLUS_006.70), Japan (SLPS_011.30), Japan (SLPS_911.10 - Playstation the Best) 
 - AC: Master of Arena: USA 2CDs (SLUS_010.30 / SLUS_010.81), Japan (SLPS_018.55 / SLPS_018.56), Japan (SLPS_914.44 / SLPS_914.45 - PSone Books)
 
@@ -110,7 +110,14 @@ OR, when using the Duckstation emulator: if you go at 'Settings->Console' in the
 
 Feedback welcome.
 
-## QoL enhancements: analog controls for Armored Core PS2 series (AC2, AC2: Another Age, AC3, AC: Silent Line - USA edition).
+## QoL enhancements: analog controls for Armored Core PS2 series (AC2, AC2: Another Age, AC3, AC: Silent Line).
+
+Supported versions:
+
+- AC2: USA (SLUS_200.14), Europe (SLES_500.79), Japan (SLPS_250.07) (also inverted look up/down _.ppf_ versions of each patch)
+- AC2: Another Age: USA ( SLUS_202.49)
+- AC3: USA (SLUS_204.35)
+- AC: Silent Line: USA (SLUS_206.44)
 
 Analog input processing inside these games was retro-fitted using algorithms from AC Nine Breaker.
 

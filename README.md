@@ -24,7 +24,7 @@ To confirm, right click the game's icon, click the 'Cheats' option and you shoul
 
 #### Purging
 
-Normally, to purge weapons/parts in this game one has to press a combination of five buttons, which works with the button default keymap, but: changing the in-game button keymap has a large number of combinations that will simply disable purging completely.
+Normally, to purge weapons/parts in this game one has to press a combination of five buttons, which works with the default in-game button keymap, but: changing the in-game button keymap has a large number of combinations that will simply disable purging completely.
 When using dual analog controls, it is expected that the user will want to change the default keymap (for example moving boost to L1, right weapon to R1 etc.) 
 
 The mod includes an extra 'Purge' modifier button, _functional with **any** custom keymap_ , by adding into the game the formally unused PSP MUSIC_NOTE button: pressing this modifier button will send the "_strafe left/strafe right/look up/look down_" combo (no matter how the buttons are mapped in-game), which means the user only needs an extra button pressed (_weapon change_, _toggle extension_ or _left weapon_ - again taking into account the in-game button mapping), in order to specify what weapon/part has to be purged. 
@@ -33,6 +33,7 @@ An extra key or controller button has to be mapped in the PPSSPP emulator to the
 
 ![purge-mod](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/d50d167e-fa8d-455a-ae84-8fbfda6f63c9)
 
+------
 
 The patch _might_ work with the Adrenaline, if that emulator is also able to map a right analog pad and send the data inside the game, as PPSSPP does. Otherwise, somebody has to write a plugin for that.
 

@@ -1,19 +1,22 @@
 ## QoL enhancements (WIP): analog controls for Armored Core 3 Portable - USA (PPPSSPP emulator)
 
+Adds _dual analogs_ capability to the game, with actual analog processing for turning and looking up/down (right stick),  when run from PPSSPP.
+
 (For more details about how these patches work, see PS1 and PS2 sections)
 
-- feature complete, but there may be ~~dragons~~ bugs
-- '_.ini_' file, 'cwcheat' format (only tested on PPSSPP)
+- feature complete, but there may be bugs
+- 'cwcheat' format ('_.ini_' file)
 - replays are (and will be) broken
-- should work on at least PPSSPP 1.13.2 or newer
-- ~~for now, it will crash unless: _PPSSPP Settings -> System -> Fast memory (unstable): **DISABLE THIS**_~~ (fixed)
+- only tested on PPSSPP - should work on at least PPSSPP version 1.13.2 or newer
 
-In order for this to work, you need the following settings inside the PPSSPP emulator: 
+#### Install instructions (PPSSPP emulator)
+
+In order for this mod to work, you will need to set the following PPSSPP settings: 
 
 - the controller configuration needs to have mappings added for the in-game right analog (even if the real PSP didn't have a right analog pad), matching the axis of your controller (see picture below).
 - cheats have to be enabled in the emulator settings
-- with a recent PPSSPP at least - the '**_.ini_**' file that contains the cwcheat information has to be placed into the 
-_'C:\Users\\<your user\>\Documents\PPSSPP\PSP\Cheats'_ folder (for older PPSSPP versions, this path is _'\<PPSSPP-install-folder\>\memstick\PSP\Cheats'_ instead).
+- with a recent version of PPSSPP, the '**_.ini_**' file that contains the cwcheat information has to be placed into the _'C:\Users\\<your user\>\Documents\PPSSPP\PSP\Cheats'_ folder
+- for older PPSSPP versions, this path is _'\<PPSSPP-install-folder\>\memstick\PSP\Cheats'_ instead
 
 To confirm, right click the game's icon, click the 'Cheats' option and you should see the patch name on the right, with an enabled checkbox:
 
@@ -21,9 +24,12 @@ To confirm, right click the game's icon, click the 'Cheats' option and you shoul
 
 #### Purging
 
-The mod also adds an extra 'Purge' modifier, by watching the PSP MUSIC_NOTE button. Pressing this button sends the "_strafe left/strafe right/look up/look down_" combo (no matter how they are mapped in-game), 
-which means it only needs an extra button pressed (_weapon change_, _toggle extension_ or _left weapon_ - depending on what you want) for the actual purge. This should work **_even if the in-game keymap is modified_**, 
-but needs to have an extra key or controller button mapped in the PPSSPP emulator, so that the PSP MUSIC_NOTE button can be actually sent to the game. For example (mapped to R2):
+Normally, to purge weapons/parts in this game one has to press a combination of five buttons, which works with the button default keymap, but: changing the in-game button keymap has a large number of combinations that will simply disable purging completely.
+When using dual analog controls, it is expected that the user will want to change the default keymap (for example moving boost to L1, right weapon to R1 etc.) 
+
+The mod includes an extra 'Purge' modifier button, _functional with **any** custom keymap_ , by adding into the game the formally unused PSP MUSIC_NOTE button: pressing this modifier button will send the "_strafe left/strafe right/look up/look down_" combo (no matter how the buttons are mapped in-game), which means the user only needs an extra button pressed (_weapon change_, _toggle extension_ or _left weapon_ - again taking into account the in-game button mapping), in order to specify what weapon/part has to be purged. 
+
+An extra key or controller button has to be mapped in the PPSSPP emulator to the PSP MUSIC_NOTE button, so that its value can be actually sent into the game, to act as 'Purge' modifier. For example (mapped to R2):
 
 ![purge-mod](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/d50d167e-fa8d-455a-ae84-8fbfda6f63c9)
 

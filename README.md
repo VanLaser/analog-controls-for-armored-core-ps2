@@ -126,7 +126,7 @@ Supported versions:
 
 - **AC2:** USA (SLUS_200.14), Europe (SLES_500.79), Japan (SLPS_250.07) (including inverted look up/down _.ppf_ versions of each patch)
 - **AC2: Another Age:** USA (SLUS_202.49), Europe (SLES_509.05), Japan (SLPS_250.40) (including inverted look up/down _.ppf_ versions of each patch)
-- **AC3:** USA (SLUS_204.35)
+- **AC3:** USA (SLUS_204.35), Europe (SLES_513.99), Japan (SLPS_251.12) (including inverted look up/down _.ppf_ versions of each patch)
 - **AC: Silent Line:** USA (SLUS_206.44)
 
 Analog input processing inside these games was retro-fitted using algorithms from AC Nine Breaker.

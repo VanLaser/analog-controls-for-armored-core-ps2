@@ -33,7 +33,7 @@ An extra key or controller button has to be mapped in the PPSSPP emulator to the
 
 ![purge-mod](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/d50d167e-fa8d-455a-ae84-8fbfda6f63c9)
 
-------
+#### Notes
 
 The patch _might_ work with the Adrenaline, if that emulator is also able to map a right analog pad and send the data inside the game, as PPSSPP does. Otherwise, somebody has to write a plugin for that.
 
@@ -41,14 +41,15 @@ Even if it's a 'cwcheat' (that continuously writes in memory), the patched addre
 In other words, if one knows how to extract/convert the data from the cwcheat and map it to file offsets, then actually patches a decrypted EBOOT.BIN file and inserts it back into the original ISO (e.g. by using UMDGen),
 it should work in PPSSPP (and maybe Adrenaline) without the need to enable cheats.
 
+------
 
 ## QoL enhancements: analog controls for Armored Core PS1 series: AC1, AC: Project Phantasma and AC: Master of Arena
 
 Supported versions: 
 
-- AC1: USA (SCUS_941.82), USA (SLUS_013.23 - Reprint edition), Japan (SLPS_009.00), Europe (SCES_008.42)
-- AC: Project Phantasma: USA (SLUS_006.70), Japan (SLPS_011.30), Japan (SLPS_911.10 - Playstation the Best) 
-- AC: Master of Arena: USA 2CDs (SLUS_010.30 / SLUS_010.81), Japan (SLPS_018.55 / SLPS_018.56), Japan (SLPS_914.44 / SLPS_914.45 - PSone Books)
+- **AC1:** USA (SCUS_941.82), USA (SLUS_013.23 - Reprint edition), Japan (SLPS_009.00), Europe (SCES_008.42)
+- **AC: Project Phantasma:** USA (SLUS_006.70), Japan (SLPS_011.30), Japan (SLPS_911.10 - Playstation the Best) 
+- **AC: Master of Arena:** USA 2CDs (SLUS_010.30 / SLUS_010.81), Japan (SLPS_018.55 / SLPS_018.56), Japan (SLPS_914.44 / SLPS_914.45 - PSone Books)
 
 **_Each patch includes an "Inverted Look Up/Down" version in a separate folder._**
 
@@ -117,14 +118,16 @@ OR, when using the Duckstation emulator: if you go at 'Settings->Console' in the
 
 Feedback welcome.
 
+------
+
 ## QoL enhancements: analog controls for Armored Core PS2 series (AC2, AC2: Another Age, AC3, AC: Silent Line).
 
 Supported versions:
 
-- AC2: USA (SLUS_200.14), Europe (SLES_500.79), Japan (SLPS_250.07) (also inverted look up/down _.ppf_ versions of each patch)
-- AC2: Another Age: USA ( SLUS_202.49)
-- AC3: USA (SLUS_204.35)
-- AC: Silent Line: USA (SLUS_206.44)
+- **AC2:** USA (SLUS_200.14), Europe (SLES_500.79), Japan (SLPS_250.07) (including inverted look up/down _.ppf_ versions of each patch)
+- **AC2: Another Age:** USA (SLUS_202.49), Europe (SLES_509.05), Japan (SLPS_250.40) (including inverted look up/down _.ppf_ versions of each patch)
+- **AC3:** USA (SLUS_204.35)
+- **AC: Silent Line:** USA (SLUS_206.44)
 
 Analog input processing inside these games was retro-fitted using algorithms from AC Nine Breaker.
 
@@ -157,9 +160,7 @@ The _.pnach_ files need a recent PS2 emulator, **PCSX2-qt nightly** is highly re
 - if you see no 'True Analogs' entry, your PCSX2 may be too old to support the new _.pnach_ file format
 - if you see the 'True Analogs' entry, but it's greyed out (can't enable it), your Armored Core game CRC is "wrong", which means you're playing a patched Armored Core, or a different version of the game
 
-----
-
-- To modifiy a game ISO directly, use the _.ppf_ files instead. The _.ppf_ files can patch the right ISO using **PPF-O-MATIC 3.0**
+To modifiy a game ISO directly, use the _.ppf_ files instead. The _.ppf_ files can patch the right ISO using **PPF-O-MATIC 3.0**
 
 ### Technical details
 

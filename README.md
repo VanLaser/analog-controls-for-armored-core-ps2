@@ -1,4 +1,4 @@
-## QoL enhancements (WIP): analog controls for Armored Core 3 Portable - USA (PPPSSPP emulator)
+## QoL enhancements: analog controls for Armored Core 3 Portable - USA (PPPSSPP emulator)
 
 Adds _dual analogs_ capability to the game, with actual analog processing for turning and looking up/down (right stick),  when run from PPSSPP.
 
@@ -35,7 +35,7 @@ An extra key or controller button has to be mapped in the PPSSPP emulator to the
 
 #### Notes
 
-The patch _might_ work with the Adrenaline, if that emulator is also able to map a right analog pad and send the data inside the game, as PPSSPP does. Otherwise, somebody has to write a plugin for that.
+The patch _might_ work with the Adrenaline, if that emulator is also able to map a right analog pad and send the data inside the game, as PPSSPP does. Otherwise, somebody has to write a plugin for that. UPDATE: I got a couple of reports it does work with Adrenaline on Vita, if any plugins or mappings for the right analog are disabled.
 
 Even if it's a 'cwcheat' (that continuously writes in memory), the patched addresses actually contain all the needed relocation fixes for it to work by directly patching the main executable file. 
 In other words, if one knows how to extract/convert the data from the cwcheat and map it to file offsets, then actually patches a decrypted EBOOT.BIN file and inserts it back into the original ISO (e.g. by using UMDGen),

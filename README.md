@@ -1,6 +1,6 @@
-## QoL enhancements: analog controls for Armored Core 3 Portable - USA (PPPSSPP emulator)
+## QoL enhancements: dual analog controls for Armored Core 3 Portable - USA and Armored Core: Silent Line Portable - USA (PPPSSPP emulator)
 
-Adds _dual analogs_ capability to the game, with actual analog processing for turning and looking up/down (right stick),  when run from PPSSPP.
+Adds _dual analogs_ capability to these games, with actual analog processing for turning and looking up/down (right stick),  when run from PPSSPP.
 
 (For more details about how these patches work, see PS1 and PS2 sections)
 

@@ -9,7 +9,7 @@ Adds _dual analogs_ capability to these games, with actual analog processing for
 - replays are (and will be) broken
 - only tested on PPSSPP - should work on at least PPSSPP version 1.13.2 or newer
 
-#### How about Armored Core: Last Raven?
+#### How about Armored Core: Last Raven Portable?
 
 Well, _AC: Last Raven Portable_ actually **already** uses the analog information, _if camera is mapped to the PSP pad_, which means D-PAD configured on "strafe left/right and forward/backward" and analog pad configured on "camera look up/down, turn left/right", plus some convenient emulator mappings (left pad to right pad, D-PAD to left pad) is all one needs to play it on PPSSPP with dual sticks. No mod needed.
 

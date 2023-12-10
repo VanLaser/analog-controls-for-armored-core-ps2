@@ -9,10 +9,6 @@ Adds _dual analogs_ capability to these games, with actual analog processing for
 - replays are (and will be) broken
 - only tested on PPSSPP - should work on at least PPSSPP version 1.13.2 or newer
 
-#### How about Armored Core: Last Raven Portable?
-
-Well, _AC: Last Raven Portable_ actually **already** uses the analog information, _if camera is mapped to the PSP pad_, which means D-PAD configured on "strafe left/right and forward/backward" and analog pad configured on "camera look up/down, turn left/right", plus some convenient emulator mappings (left pad to right pad, D-PAD to left pad) is all one needs to play it on PPSSPP with dual sticks. No mod needed.
-
 #### Install instructions (PPSSPP emulator)
 
 In order for this mod to work, you will need to set the following PPSSPP settings: 
@@ -45,6 +41,16 @@ UPDATE: I got a couple of reports that it does work with Adrenaline on Vita, if 
 Even if it's a 'cwcheat' (that continuously writes in memory), the patched addresses actually contain all the needed relocation fixes for it to work by directly patching the main executable file. 
 In other words, if one knows how to extract/convert the data from the cwcheat and map it to file offsets, then actually patches a decrypted EBOOT.BIN file and inserts it back into the original ISO (e.g. by using UMDGen),
 it should work in PPSSPP (and maybe Adrenaline) without the need to enable cheats.
+
+##### How about Armored Core: Last Raven Portable?
+
+Well, _AC: Last Raven Portable_ actually **already** uses the analog information, _if camera is mapped to the PSP pad_, which means D-PAD configured on "strafe left/right and forward/backward" and analog pad configured on "camera look up/down, turn left/right": 
+
+![ac-lr-psp-01](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/03fb4e24-d906-4db9-a368-9ea10dca29c3)
+
+![ac-lr-psp-02](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/cf640743-6e87-489c-95fa-ac1ac076cf63)
+
+All that's left is creating some convenient emulator mappings (left pad -> right pad, D-PAD -> left pad) to play on PPSSPP with dual sticks, therefore: no analog mod needed.
 
 ------
 

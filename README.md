@@ -47,11 +47,7 @@ An extra key or controller button has to be mapped in the PPSSPP emulator to the
 #### Notes
 
 The patch _might_ work with the Adrenaline, if that emulator is also able to map a right analog pad and send the data inside the game, as PPSSPP does. Otherwise, somebody has to write a plugin for that.  
-UPDATE: I got a couple of reports that it does work with Adrenaline on Vita, if any plugins or mappings for the right analog are disabled.
-
-Even if it's a 'cwcheat' (that continuously writes in memory), the patched addresses actually contain all the needed relocation fixes for it to work by directly patching the main executable file. 
-In other words, if one knows how to extract/convert the data from the cwcheat and map it to file offsets, then actually patches a decrypted EBOOT.BIN file and inserts it back into the original ISO (e.g. by using UMDGen),
-it should work in PPSSPP (and maybe Adrenaline) without the need to enable cheats.
+UPDATE: I got a couple of reports that at least AC3 Portable patched ISO mod does work with Adrenaline on Vita, if any plugins or mappings for the right analog are disabled.
 
 ##### How about Armored Core: Last Raven Portable?
 

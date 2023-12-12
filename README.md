@@ -17,7 +17,7 @@ In order for this mod to work, you will need to set the following PPSSPP setting
 
 ##### PPF patch on the decrypted EBOOT.BIN
 
-1. PPSSPP can be configured to generate a decrypted EBOOT.BIN (or you can extract the EBOOT.BIN from the ISO with 7zip, then find some "pspdecrypt" tool and use that on the .BIN file) 
+1. PPSSPP can be configured to generate a decrypted EBOOT.BIN (or you can extract the EBOOT.BIN from the ISO with 7zip, then use the command-line tool "[pspdecrypt](https://github.com/John-K/pspdecrypt/releases)" on the .BIN file) 
 2. Next, use **PPF-O-MATIC 3.0** or other compatible tool to apply the PPF patch on that decrypted EBOOT.BIN
 3. Finally, use **UMDGen** or a similar tool to insert the new, patched EBOOT.BIN inside the original ISO in place of the old EBOOT.BIN.
 

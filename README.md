@@ -5,7 +5,7 @@ Adds _dual analogs_ capability to these games, with actual analog processing for
 (For more details about how these patches work, see PS1 and PS2 sections)
 
 - feature complete, but there may be bugs
-- 'cwcheat' format ('_.ini_' file)
+- PPF patch format for the decrypted EBOOT.BIN (also 'cwcheat' format - '_.ini_' file - but not recommended, apparently the 'cwcheat' has unintended consequences)
 - replays are (and will be) broken
 - only tested on PPSSPP - should work on at least PPSSPP version 1.13.2 or newer
 
@@ -14,6 +14,17 @@ Adds _dual analogs_ capability to these games, with actual analog processing for
 In order for this mod to work, you will need to set the following PPSSPP settings: 
 
 - the controller configuration needs to have mappings added for the in-game right analog (even if the real PSP didn't have a right analog pad), matching the axis of your controller (see picture below).
+
+##### PPF patch on the decrypted EBOOT.BIN
+
+1. PPSSPP can be configured to generate a decrypted EBOOT.BIN (or you can extract the EBOOT.BIN from the ISO with 7zip, then find some "pspdecrypt" tool and use that on the .BIN file) 
+2. Next, use **PPF-O-MATIC 3.0** or other compatible tool to apply the PPF patch on that decrypted EBOOT.BIN
+3. Finally, use **UMDGen** or a similar tool to insert the new, patched EBOOT.BIN inside the original ISO in place of the old EBOOT.BIN.
+
+This convoluted method is necessary since creating a PPF patch directly on the game ISO is legally problematic: the original EBOOT.BIN file is encrypted, and patching that would create a file that will contain information about **the whole** executable, instead of just a difference.
+
+##### CWCHEAT method (not recommended, unstable)
+
 - cheats have to be enabled in the emulator settings
 - with a recent version of PPSSPP, the '**_.ini_**' file that contains the cwcheat information has to be placed into the _'C:\Users\\<your user\>\Documents\PPSSPP\PSP\Cheats'_ folder
 - for older PPSSPP versions, this path is _'\<PPSSPP-install-folder\>\memstick\PSP\Cheats'_ instead

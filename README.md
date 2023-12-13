@@ -101,6 +101,8 @@ therefore by default it won't allow switching to analog mode from the GUI.
 BUT, you can still switch to analog mode by pressing your controller's analog button
 (and this is the simple, recommended approach).
 
+On PC at least, you can also press ESC and click the "Toggle Analog" option in the overlay menu that pops up.
+
 Optional: to default to analog mode when the game starts, edit 'Duckstation/resources/gamesdb.json'
 with a text editor, search for 'SLUS-01323' and modify the "controller"
 entry value from "DigitalController" to "AnalogController".
@@ -182,7 +184,7 @@ The _.pnach_ files need a recent PS2 emulator, **PCSX2-qt nightly** is highly re
 
 To modifiy a game ISO directly, use the _.ppf_ files instead. The _.ppf_ files can patch the right ISO using **PPF-O-MATIC 3.0**
 
-In some of the games, the look up/down motion feels more exacerbated than in others, even if the patching idea is the same, and the original coding also seems similar between games. To aleviate that, if you play in PCSX2 emulator, go to controller settings and adjust the "Analog Sensitivity" value - by default it's set to 130% (a good starting value to tweak from is 100%).  
+In some of the games, the look up/down motion feels more exacerbated than in others, even if the patching idea is the same, and the original coding also seems similar between games. To alleviate that, if you play in PCSX2 emulator, go to controller settings and adjust the "Analog Sensitivity" value - by default it's set to 130% (a good starting value to tweak from is 100%).  
 
 ### Technical details
 

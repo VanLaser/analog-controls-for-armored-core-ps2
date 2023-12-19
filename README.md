@@ -1,11 +1,11 @@
-## QoL enhancements: dual analog controls for Armored Core 3 Portable - USA and Armored Core: Silent Line Portable - USA (PPPSSPP emulator)
+## QoL enhancements: dual analog controls for Armored Core 3 Portable - USA, Armored Core: Silent Line Portable - USA and (WIP) Armored Core: Last Raven Portable - USA (PPPSSPP emulator)
 
 Adds _dual analogs_ capability to these games, with actual analog processing for turning and looking up/down (right stick),  when run from PPSSPP.
 
 (For more details about how these patches work, see PS1 and PS2 sections)
 
 - feature complete, but there may be bugs
-- PPF patch format for the decrypted EBOOT.BIN (also 'cwcheat' format - '_.ini_' file - but not recommended, apparently the 'cwcheat' has unintended consequences)
+- PPF patch format for the decrypted EBOOT.BIN (_cwcheat_ version was removed, since it was unstable)
 - replays are (and will be) broken
 - only tested on PPSSPP - should work on at least PPSSPP version 1.13.2 or newer
 
@@ -23,22 +23,15 @@ In order for this mod to work, you will need to set the following PPSSPP setting
 
 This convoluted method is necessary since creating a PPF patch directly on the game ISO is legally problematic: the original EBOOT.BIN file is encrypted, and patching that would create a file that will contain information about **the whole** executable, instead of just a difference.
 
-##### CWCHEAT method (not recommended, unstable)
-
-- cheats have to be enabled in the emulator settings
-- with a recent version of PPSSPP, the '**_.ini_**' file that contains the cwcheat information has to be placed into the _'C:\Users\\<your user\>\Documents\PPSSPP\PSP\Cheats'_ folder
-- for older PPSSPP versions, this path is _'\<PPSSPP-install-folder\>\memstick\PSP\Cheats'_ instead
-
-To confirm, right click the game's icon, click the 'Cheats' option and you should see the patch name on the right, with an enabled checkbox:
-
-![ppsspp-enable-cheat](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/595ffc0b-384e-42bc-8b33-531c73616dea)
-
 #### Purging
 
 Normally, to purge weapons/parts in this game one has to press a combination of five buttons, which works with the default in-game button keymap, but: changing the in-game button keymap has a large number of combinations that will simply disable purging completely.
 When using dual analog controls, it is expected that the user will want to change the default keymap (for example moving boost to L1, right weapon to R1 etc.) 
 
-The mod includes an extra 'Purge' modifier button, _functional with **any** custom keymap_ , by adding into the game the formally unused PSP MUSIC_NOTE button: pressing this modifier button will send the "_strafe left/strafe right/look up/look down_" combo (no matter how the buttons are mapped in-game), which means the user only needs an extra button pressed (_weapon change_, _toggle extension_ or _left weapon_ - again taking into account the in-game button mapping), in order to specify what weapon/part has to be purged. 
+The mod includes an extra 'Purge' modifier button, _functional with **any** custom keymap_ , by adding into the game the formally unused PSP MUSIC_NOTE button: 
+
+- for _Armored Core 3 Portable_ and _Silent Line Portable_: pressing this modifier button will send the "_strafe left/strafe right/look up/look down_" combo (no matter how the buttons are mapped in-game), which means the user only needs an extra button pressed (_weapon change_, _toggle extension_ or _left weapon_ - again taking into account the in-game button mapping), in order to specify what weapon/part has to be purged.
+- for _Armored Core: Last Raven Portable_: pressing the purge modifier button will act as intended, but without sending the 4 buttons combo mentioned above (a special flag is used instead); the user only needs an extra button pressed (_right weapon_, _toggle extension_ or _left weapon_) to specify what to purge. In addition, due to the way the dual analog mod is implemented for this game, explicitely sending the normal combo "_strafe left/strafe right/look up/look down_" WILL NEVER work (see the **AC:LR** implementation note below). 
 
 An extra key or controller button has to be mapped in the PPSSPP emulator to the PSP MUSIC_NOTE button, so that its value can be actually sent into the game, to act as 'Purge' modifier. For example (mapped to R2):
 
@@ -46,8 +39,15 @@ An extra key or controller button has to be mapped in the PPSSPP emulator to the
 
 #### Notes
 
-The patch _might_ work with the Adrenaline, if that emulator is also able to map a right analog pad and send the data inside the game, as PPSSPP does. Otherwise, somebody has to write a plugin for that.  
+The patch _might_ work with the Adrenaline, if that emulator is also able to map a right analog pad and send the data inside the game, as PPSSPP does. Otherwise, somebody has to write a plugin for that. 
 UPDATE: I got a couple of reports that at least AC3 Portable patched ISO mod does work with Adrenaline on Vita, if any plugins or mappings for the right analog are disabled.
+  
+The dual analog mod implementation from _Armored Core: Last Raven Portable_ is different than the others: this game actually has extra, unused instructions left inside the executable that include analog processing for four axes of movement: either the code was a left-over from the PS2 implementation, or the developers had access to a special dual analog device hooked to the PSP developer kit during testing. In any case, the dual analog mod takes advantage of this existing analog processing code. Because of that, this mod is different than the others: when the analog axes are moved, there are no additional, corresponding digital buttons also "pushed", as it happend with the previous mods: for example, in all other dual analog mods (other than AC:LR Portable / PSP), when the user pushes the right analog, the L2 (PS2) or triangle (PSP) button is also pressed (assuming the default in-game keymap). For AC:LR Portable, this is not the case. This has some consequences:
+
+- With the dual analog mod enabled, the player **has** to use the the analog pads for movement, the corresponding digital buttons mapped in the game will not work
+- To purge, the player **has** to map the PSP MUSIC_NOTE button as the purge modifier - otherwise purge will not work at all (since the normal purge button combinations don't work due to the buttons being disabled)
+
+You can still change the in-game keymap as you like! It's just that the buttons mapped to the movement and camera are "muted" and basically replaced by the analogs.
 
 ------
 

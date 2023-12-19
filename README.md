@@ -49,16 +49,6 @@ An extra key or controller button has to be mapped in the PPSSPP emulator to the
 The patch _might_ work with the Adrenaline, if that emulator is also able to map a right analog pad and send the data inside the game, as PPSSPP does. Otherwise, somebody has to write a plugin for that.  
 UPDATE: I got a couple of reports that at least AC3 Portable patched ISO mod does work with Adrenaline on Vita, if any plugins or mappings for the right analog are disabled.
 
-##### How about Armored Core: Last Raven Portable?
-
-Well, _AC: Last Raven Portable_ actually **already** uses the analog information, _if camera is mapped to the PSP pad_, which means D-PAD configured on "strafe left/right and forward/backward" and analog pad configured on "camera look up/down, turn left/right": 
-
-![ac-lr-psp-01](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/03fb4e24-d906-4db9-a368-9ea10dca29c3)
-
-![ac-lr-psp-02](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/cf640743-6e87-489c-95fa-ac1ac076cf63)
-
-All that's left is creating some convenient emulator mappings (left pad -> right pad, D-PAD -> left pad) to play on PPSSPP with dual sticks, therefore: no analog mod needed.
-
 ------
 
 ## QoL enhancements: analog controls for Armored Core PS1 series: AC1, AC: Project Phantasma and AC: Master of Arena

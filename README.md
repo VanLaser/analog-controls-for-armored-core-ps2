@@ -1,8 +1,10 @@
-## QoL enhancements: dual analog controls for Armored Core 3 Portable - USA, Armored Core: Silent Line Portable - USA and (WIP) Armored Core: Last Raven Portable - USA (PPPSSPP emulator)
+## QoL enhancements: dual analog controls for Armored Core 3 Portable - USA, Armored Core: Silent Line Portable - USA and Armored Core: Last Raven Portable - USA (PPPSSPP emulator)
 
 Adds _dual analogs_ capability to these games, with actual analog processing for turning and looking up/down (right stick),  when run from PPSSPP.
 
 (For more details about how these patches work, see PS1 and PS2 sections)
+
+![ac-psp-covers](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/c227217c-9715-4443-8a1e-b86dda856183)
 
 - feature complete, but there may be bugs
 - PPF patch format for the decrypted EBOOT.BIN (_cwcheat_ version was removed, since it was unstable)
@@ -14,6 +16,9 @@ Adds _dual analogs_ capability to these games, with actual analog processing for
 In order for this mod to work, you will need to set the following PPSSPP settings: 
 
 - the controller configuration needs to have mappings added for the in-game right analog (even if the real PSP didn't have a right analog pad), matching the axis of your controller (see picture below).
+
+ ![ppsspp-01](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/83ddfbb0-6c51-4ab7-9a38-067a8b7bdd28)
+ 
 
 ##### PPF patch on the decrypted EBOOT.BIN
 

@@ -52,9 +52,9 @@ The dual analog mod implementation from _Armored Core: Last Raven Portable_ is d
 - With the dual analog mod enabled, the player **has** to use the the analog pads for movement, the corresponding digital buttons mapped in the game will not work
 - If the in-game keymap is changed and displayes "DISABLED" instead of a purge button combo, the player **has** to map the PSP MUSIC_NOTE button as the purge modifier to be able to purge at all times.
 
-Latest version of the LR Portable patch re-enables "look reset" by pressing the in-game mapped look up/down buttons (if the in-game keymap shows a button combo, and not the "DISABLED" message), and also re-enables the default "4 button combo" purge modifier (same conditions).
+Latest stable version of the LR Portable patch re-enables "look reset" by pressing the in-game mapped look up/down buttons (if the in-game keymap shows a button combo, and not the "DISABLED" message), and also re-enables the default "4 button combo" purge modifier (same conditions).
 
-**AC: LR Portable BUG:** can't select inside parts. Enabling the analog processing instructions described above had the side effect of disabling the usage of the inside part/weapon (will try to fix it). It makes sense in a way, if the analog processing code is a leftover from the PS2 original version, that would correspond to the "Type A" (analog) controller scheme from that game; and "Type A" has a dedicated button for using the inside parts (and therefore no switching to the inside part as normal cycling through weapons). So now the modded game is left without a dedicated button for the inside part, _and_ no way to switch to it.
+Latest BETA version of the LR portable patch fixes the following **AC: LR Portable BUG:** can't select inside parts. Enabling the analog processing instructions described above had the side effect of disabling the usage of the inside part/weapon. It makes sense in a way, if the analog processing code is a leftover from the PS2 original version, that would correspond to the "Type A" (analog) controller scheme from that game; and "Type A" has a dedicated button for using the inside parts (and therefore no switching to the inside part as normal cycling through weapons). So now the modded game is left without a dedicated button for the inside part, _and_ no way to switch to it.
 
 ------
 

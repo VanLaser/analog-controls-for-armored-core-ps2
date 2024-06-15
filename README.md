@@ -1,5 +1,7 @@
 ## QoL enhancements: dual analog controls for Armored Core 3 Portable - USA, Armored Core: Silent Line Portable - USA and Armored Core: Last Raven Portable - USA (PPPSSPP emulator)
 
+⚠ **_NOTE: If you play AC Last Raven Portable with the latest patch (inside weapon selection fix), feedback would be very appreciated!_**
+
 Adds _dual analogs_ capability to these games, with actual analog processing for turning and looking up/down (right stick),  when run from PPSSPP.
 
 (For more details about how these patches work, see PS1 and PS2 sections)

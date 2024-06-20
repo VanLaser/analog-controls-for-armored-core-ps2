@@ -1,4 +1,4 @@
-## QoL enhancements: dual analog controls for Armored Core 3 Portable - USA, Armored Core: Silent Line Portable - USA and Armored Core: Last Raven Portable - USA (PPPSSPP emulator)
+## QoL enhancements: dual analog controls for Armored Core 3 Portable - USA, Armored Core: Silent Line Portable - USA, Armored Core: Last Raven Portable - USA and Armored Core: Formula Front International - Japan (PPPSSPP emulator, Vita)
 
 ⚠ **_NOTE: If you play AC Last Raven Portable with the latest patch (inside weapon selection fix), feedback would be very appreciated!_**
 
@@ -11,7 +11,7 @@ Adds _dual analogs_ capability to these games, with actual analog processing for
 - feature complete, but there may be bugs
 - PPF patch format for the decrypted EBOOT.BIN (_cwcheat_ version was removed, since it was unstable)
 - replays are (and will be) broken
-- only tested on PPSSPP - should work on at least PPSSPP version 1.13.2 or newer
+- only tested on PPSSPP - should work on at least PPSSPP version 1.13.2 or newer (for AC:FFI, use PPSSPP v1.16+)
 
 #### Install instructions (PPSSPP emulator)
 
@@ -38,11 +38,13 @@ When using dual analog controls, it is expected that the user will want to chang
 The mod includes an extra 'Purge' modifier button, _functional with **any** custom keymap_ , by adding into the game the formally unused PSP MUSIC_NOTE button: 
 
 - for _Armored Core 3 Portable_ and _Silent Line Portable_: pressing this modifier button will send the "_strafe left/strafe right/look up/look down_" combo (no matter how the buttons are mapped in-game), which means the user only needs an extra button pressed (_weapon change_, _toggle extension_ or _left weapon_ - again taking into account the in-game button mapping), in order to specify what weapon/part has to be purged.
-- for _Armored Core: Last Raven Portable_: pressing the purge modifier button will act as intended, but without sending the 4 buttons combo mentioned above (a special flag is used instead); the user similarly only needs an extra button pressed (_right weapon_, _toggle extension_ or _left weapon_) to specify what to purge. Explicitely sending the normal combo "_strafe left/strafe right/look up/look down_" will work as before (but only when the in-game keymap allows it). 
+- for _Armored Core: Last Raven Portable_: pressing the purge modifier button will act as intended, but without sending the 4 buttons combo mentioned above (a special flag is used instead); the user similarly only needs an extra button pressed (_right weapon_, _toggle extension_ or _left weapon_) to specify what to purge. Explicitely sending the normal combo "_strafe left/strafe right/look up/look down_" will work as before (but only when the in-game keymap allows it).
 
 An extra key or controller button has to be mapped in the PPSSPP emulator to the PSP MUSIC_NOTE button, so that its value can be actually sent into the game, to act as 'Purge' modifier. For example (mapped to R2):
 
 ![purge-mod](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/d50d167e-fa8d-455a-ae84-8fbfda6f63c9)
+
+An exception to this is _Armored Core: FFI Portable (Japan)_: purging doesn't need any new buttons, the default method should still work (D-PAD UP + button used to sellect what part/weapon to purge, according to user button mapping).
 
 #### Notes
 
@@ -57,6 +59,12 @@ The dual analog mod implementation from _Armored Core: Last Raven Portable_ is d
 Latest stable version of the LR Portable patch re-enables "look reset" by pressing the in-game mapped look up/down buttons (if the in-game keymap shows a button combo, and not the "DISABLED" message), and also re-enables the default "4 button combo" purge modifier (same conditions).
 
 Latest BETA version of the LR portable patch fixes the following **AC: LR Portable BUG:** can't select inside parts. Enabling the analog processing instructions described above had the side effect of disabling the usage of the inside part/weapon. It makes sense in a way, if the analog processing code is a leftover from the PS2 original version, that would correspond to the "Type A" (analog) controller scheme from that game; and "Type A" has a dedicated button for using the inside parts (and therefore no switching to the inside part as normal cycling through weapons). So now the modded game is left without a dedicated button for the inside part, _and_ no way to switch to it.
+
+#### Armored Core: FFI Portable (Japan)
+
+Status: very experimental.
+
+By default, even in manual fights, in this game the  vertical camera movement is automatic (follows the enemy). The analog patch disables this automatic vertical lock-on when doing manual fights, so that right analog stick *CAN* be used to manually control the camera on all 4 directions, similar to the other AC games in the series. There is no "camera reset" combo, though. Purging should work as usual (D-PAD UP + relevant part/weapon button).
 
 ------
 

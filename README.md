@@ -62,7 +62,8 @@ Latest BETA version of the LR portable patch fixes the following **AC: LR Portab
 
 #### Armored Core: FFI Portable (Japan)
 
-Status: very experimental.
+_Supported version_: ULJS-19001 (dual language support: Japanese/English)  
+_Status_: very experimental.
 
 By default, even in manual fights, in this game the  vertical camera movement is automatic (follows the enemy). The analog patch disables this automatic vertical lock-on when doing manual fights, so that right analog stick *CAN* be used to manually control the camera on all 4 directions, similar to the other AC games in the series. There is no "camera reset" combo, though. Purging should work as usual (D-PAD UP + relevant part/weapon button).
 

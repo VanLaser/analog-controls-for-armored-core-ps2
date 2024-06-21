@@ -1,12 +1,12 @@
 ## QoL enhancements: dual analog controls for Armored Core 3 Portable - USA, Armored Core: Silent Line Portable - USA, Armored Core: Last Raven Portable - USA and Armored Core: Formula Front International - Japan (PPPSSPP emulator, Vita)
 
-⚠ **_NOTE: If you play AC Last Raven Portable with the latest patch (inside weapon selection fix), feedback would be very appreciated!_**
+⚠ **_NOTE: If you play AC: Last Raven Portable with the latest patch (inside weapon selection fix), or the new patch for the AC: Formula Front International, feedback would be very appreciated!_**
 
 Adds _dual analogs_ capability to these games, with actual analog processing for turning and looking up/down (right stick),  when run from PPSSPP.
 
 (For more details about how these patches work, see PS1 and PS2 sections)
 
-![ac-psp-covers](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/c227217c-9715-4443-8a1e-b86dda856183)
+![ac-psp-covers](https://github.com/VanLaser/analog-controls-for-armored-core-ps2/assets/8756008/117c585e-5552-41c2-9d94-e5743f792952)
 
 - feature complete, but there may be bugs
 - PPF patch format for the decrypted EBOOT.BIN (_cwcheat_ version was removed, since it was unstable)
